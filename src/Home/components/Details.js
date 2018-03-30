@@ -16,7 +16,7 @@ class Details extends Component {
                 <div className="col-sm-12 col-md-4 col-lg-4 float-left">
                     <ProgressiveImage
                         src={getItem.data.image}
-                        placeholder={`${window.location.origin}/img/placeholder.png`}>
+                        placeholder={'suniltc.github.io/food/img/placeholder.png'}>
                         {(src) =>
                             <img
                                 src={src}

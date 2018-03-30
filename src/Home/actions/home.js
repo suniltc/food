@@ -18,7 +18,7 @@ const say = (type) => {
 export const getItems = () => (dispatch) => {
 	dispatch(say(types.IS_LOADING_ITEMS));
 	
-	axios.get(`${window.location.origin}/api.json`)
+	axios.get('suniltc.github.io/food/api.json')
 	.then(function (response) {
 		dispatch(pass(types.GET_ITEMS, response.data));
 	})
