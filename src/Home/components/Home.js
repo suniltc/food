@@ -20,7 +20,7 @@ class Home extends Component {
                                 <Link to={`details/${getItem.name}`}>
                                 <ProgressiveImage
                                     src={getItem.image}
-                                    placeholder={'https://suniltc.github.io/food/img/placeholder.png'}>
+                                    placeholder={`${window.location.origin}/food/img/placeholder.png`}>
                                     {(src) =>
                                         <img
                                             src={src}
