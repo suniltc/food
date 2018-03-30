@@ -18,7 +18,7 @@ const say = (type) => {
 export const getItems = () => (dispatch) => {
 	dispatch(say(types.IS_LOADING_ITEMS));
 	
-	axios.get("/food/api.json")
+	axios.get(`${window.location.origin}/food/api.json`)
 	.then(function (response) {
 		dispatch(pass(types.GET_ITEMS, response.data));
 	})
